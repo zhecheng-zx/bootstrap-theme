@@ -32,7 +32,8 @@ var path={
         css:['src/css','src/css/*.css'],
         sass:['src/sass/**/*.scss'],
         image:['src/images/**'],
-        resource:['src/vendor/**/**']
+        resource:['src/vendor/**/**'],
+        manifest:['src/manifest']
     },
     output:{
         font: themeName + '/css/font',

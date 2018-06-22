@@ -283,6 +283,17 @@ pre {
   position: absolute;
 }
 
+.zui-content {
+  position: relative;
+  left: 0;
+  margin-left: 230px;
+  min-height: 100%;
+}
+
+.main-content {
+  padding: 25px;
+}
+
 /**
  * Created by zhangxin on 2018/6/21.
  * 
