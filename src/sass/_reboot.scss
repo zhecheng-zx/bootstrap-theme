@@ -1,0 +1,68 @@
+/**
+ * Created by zhangxin on 2018/6/19.
+ * 初始化页面配置
+ */
+*{
+  margin: 0;
+  padding: 0;
+}
+html{
+  height: 100%;
+  font-family: 'sans-serif';
+  font-size: $body-font-size;
+  -ms-overflow-style: scrollbar; //设置@viewport将导致滚动条与IE11和Edge中的内容重叠，因此我们强制使用非重叠、非自动隐藏的滚动条进行抵消。
+}
+body{
+  height: 100%;
+  color: $body-color;
+  font-size: $body-font-size;
+  font-family: $body-font-family;
+  background-color: $body-background;
+}
+ul,
+ol,
+li {
+  list-style: none;
+  padding: 0;
+}
+textarea {
+  resize: none;
+}
+a{
+  text-decoration: none;
+  outline: none;
+  background-color: transparent; // 删除iOS 8+和Safari 8+中下划线
+  -webkit-text-decoration-skip: objects; // 删除ie10中的灰色背景。
+  &:link,
+  &:hover,
+  &:active,
+  &:visited,
+  &:focus {
+    text-decoration: none;
+    outline: none;
+  }
+}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder,
+input:-moz-placeholder, textarea:-moz-placeholder,
+input::-moz-placeholder, textarea::-moz-placeholder ,
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  color: $gray-500;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 1000px $white inset !important;
+  -webkit-text-fill-color: $body-color !important;
+}
+pre {
+  background-color: $gray-300;
+  white-space: pre-wrap;
+  /*css-3*/
+  white-space: -moz-pre-wrap;
+  /*Mozilla,since1999*/
+  white-space: -pre-wrap;
+  /*Opera4-6*/
+  white-space: -o-pre-wrap;
+  /*Opera7*/
+  word-wrap: break-word;
+  /*InternetExplorer5.5+*/
+}

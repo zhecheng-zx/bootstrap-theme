@@ -1,0 +1,301 @@
+@charset "UTF-8";
+/**
+ * Created by zhangxin on 2018/6/19.
+ * Bootstrap v3.3.7
+ */
+/**
+ * Created by zhangxin on 2018/6/19.
+ * 定义公用方法
+ */
+/**
+ * Created by zhangxin on 2018/6/19.
+ * 声明全局变量
+ */
+/**
+ * Created by zhangxin on 2018/6/21.
+ *
+ */
+/**
+ * Created by zhangxin on 2018/6/21.
+ * 清除浮动
+ */
+/**
+ * Created by zhangxin on 2018/6/19.
+ * 初始化页面配置
+ */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+  font-family: 'sans-serif';
+  font-size: 13px;
+  -ms-overflow-style: scrollbar;
+}
+
+body {
+  height: 100%;
+  color: #333;
+  font-size: 13px;
+  font-family: PingFang SC, Lantinghei SC, Helvetica Neue, Helvetica, Arial, Microsoft YaHei, 微软雅黑, STHeitiSC-Light, simsun, 宋体, WenQuanYi Zen Hei, WenQuanYi Micro Hei, "sans-serif";
+  background-color: #eee;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+  padding: 0;
+}
+
+textarea {
+  resize: none;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+a:link, a:hover, a:active, a:visited, a:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder,
+input:-moz-placeholder, textarea:-moz-placeholder,
+input::-moz-placeholder, textarea::-moz-placeholder,
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  color: #adb5bd;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 1000px #fff inset !important;
+  -webkit-text-fill-color: #333 !important;
+}
+
+pre {
+  background-color: #dee2e6;
+  white-space: pre-wrap;
+  /*css-3*/
+  white-space: -moz-pre-wrap;
+  /*Mozilla,since1999*/
+  white-space: -pre-wrap;
+  /*Opera4-6*/
+  white-space: -o-pre-wrap;
+  /*Opera7*/
+  word-wrap: break-word;
+  /*InternetExplorer5.5+*/
+}
+
+/**
+ * Created by zhangxin on 2018/6/21.
+ * 布局部份
+ */
+.zui-wrapper {
+  min-height: 100%;
+  padding-top: 61px;
+}
+
+.zui-top-header {
+  padding: 0;
+  margin-bottom: 0;
+  border: 0;
+  border-bottom: 1px solid #e6e5e5;
+  background-color: #fff;
+  border-radius: 0;
+}
+
+.zui-top-header .zui-navbar-header {
+  float: left;
+  width: 230px;
+}
+
+.zui-top-header .zui-navbar-header .navbar-brand {
+  padding: 0 15px;
+  height: 60px;
+  line-height: 60px;
+  color: #737373;
+}
+
+.zui-top-header .icon-navbar > li > a {
+  padding-top: 19px;
+  padding-bottom: 19px;
+}
+
+.zui-top-header .icon-navbar .glyphicon {
+  font-size: 18px;
+  color: #737373;
+}
+
+.zui-top-header .page-title {
+  float: left;
+  line-height: 60px;
+  font-size: 19px;
+}
+
+.fixed-top {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+.fixed-top {
+  top: 0;
+}
+
+.zui-left-sidebar {
+  background-color: #f5f5f5;
+  width: 230px;
+  left: 0;
+  position: absolute;
+  border-right: 1px solid #e3e3e3;
+}
+
+.zui-left-sidebar .left-sidebar-toggle {
+  display: none;
+  background-color: #FFF;
+  padding: 16px 10px;
+  color: #404040;
+  font-weight: 300;
+  font-size: 1.077rem;
+}
+
+.zui-left-sidebar .left-sidebar-spacer {
+  display: table-row;
+  height: 100%;
+}
+
+.zui-left-sidebar .left-sidebar-scroll {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.zui-left-sidebar .left-sidebar-content {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-top: 8px;
+}
+
+.zui-left-sidebar .sidebar-elements > li > a {
+  display: block;
+  padding: 0 20px;
+  color: #646464;
+  font-size: 14px;
+  line-height: 38px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.zui-left-sidebar .sidebar-elements > li > a:hover {
+  background-color: #f0f0f0;
+}
+
+.zui-left-sidebar .sidebar-elements > li.active > a {
+  padding-left: 20px;
+  font-weight: 500;
+  color: #4285f4;
+}
+
+.zui-left-sidebar .sidebar-elements > li.parent > a:before {
+  content: "\e252";
+  float: right;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: 400;
+  color: #c5c5c5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.zui-left-sidebar .sidebar-elements > li.parent.open > a:before {
+  content: "\e253";
+}
+
+.zui-left-sidebar .sidebar-elements > li > ul {
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.zui-left-sidebar .sidebar-elements > li ul {
+  display: none;
+  background-color: #eee;
+  padding: 10px 0;
+  list-style: none;
+  line-height: 20px;
+}
+
+.zui-left-sidebar .sidebar-elements > li ul li > a {
+  padding: 8px 15px 8px 49px;
+  color: #646464;
+  font-size: 13px;
+  display: block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.zui-left-sidebar .sidebar-elements > li ul li > a:hover {
+  background-color: #e7e7e7;
+}
+
+.zui-left-sidebar .sidebar-elements > li ul li.active > a,
+.zui-left-sidebar .sidebar-elements > li .active > a > span {
+  color: #4285f4;
+}
+
+.zui-left-sidebar .sidebar-elements > li.open > ul {
+  display: block;
+}
+
+.zui-left-sidebar .sidebar-elements .divider {
+  padding: 20px 20px 0;
+  color: #b0b0b0;
+  line-height: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 11px;
+}
+
+.zui-fixed-sidebar .zui-left-sidebar {
+  height: 100%;
+  margin-top: 61px;
+  padding-bottom: 61px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: 1029;
+}
+
+.zui-fixed-sidebar .zui-left-sidebar .left-sidebar-scroll {
+  position: absolute;
+}
+
+/**
+ * Created by zhangxin on 2018/6/21.
+ * 
+ */
+/**
+ * Created by zhangxin on 2018/6/21.
+ *
+ */
+.clearfix:before, .clearfix:after {
+  display: block;
+  content: "";
+}
+
+.clearfix:after {
+  clear: both;
+}
